@@ -9,10 +9,39 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="container">
+      <UniqueIdentifier>{1df06772-dc57-4040-abd6-d51bfad5cb93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="container\ContainerBase.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\ContainerString.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\ContainerVector.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+    <ClCompile Include="container\ContainerTest.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="container\ContainerBase.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ContainerString.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ContainerVector.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ContainerTest.h">
+      <Filter>container</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
