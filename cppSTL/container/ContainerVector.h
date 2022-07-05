@@ -10,6 +10,7 @@ public:
 	void Capacity();
 	void Assignment();
 	void Access();
+	void OtherOp();
 	void PrintResult(vector<int> &v,string str = "");
 private:
 	vector<int> m_vecContainer;

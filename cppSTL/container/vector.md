@@ -5,9 +5,6 @@ vector<T> v; //采用模板实现类实现，默认构造函数
 vector(v.begin(), v.end());//将v[begin(), end())区间中的元素拷贝给本身。
 vector(n, elem);//构造函数将n个elem拷贝给本身。
 vector(const vector &vec);//拷贝构造函数。
-//例子 使用第二个构造函数 我们可以...
-int arr[] = {2,3,4,1,9};
-vector<int> v1(arr, arr + sizeof(arr) / sizeof(int));
 ```
 
 赋值
@@ -25,12 +22,12 @@ swap(vec);	// 将vec与本身的元素互换。
 ```c++
 size();//返回容器中元素的个数
 empty();//判断容器是否为空
-resize(int num);//重新指定容器的长度为num，若容器变长，则以默认值填充新位置。反之则末尾超出容器长度的元素被删除。
+resize(int num);//重新指定容器的长度为num，若容器变长，则以默认值0填充新位置。反之则末尾超出容器长度的元素被删除。
 resize(int num, elem);//重新指定容器的长度为num，若容器变长，则以elem值填充新位置。反之则末尾超出容器长度的元素被删除。
 capacity();//容器的容量
 
 reserve(int len);	//容器预留len个元素长度，预留位置不初始化，元素不可访问。
-					//预留位置，避免多次扩容
+					//预留位置，避免多次扩容。
 ```
 
 存取
@@ -59,3 +56,12 @@ erase(const_iterator pos);//删除迭代器指向的元素
 clear();//删除容器中所有元素
 ```
 
+说明：
+
+resize影响容量和大小。reserve影响容量。
+
+利用vector<int>(v).swap(v);收缩容量。
+
+构造：构造对象初始化；赋值：清空容器再赋值；插入：在原容器基础插入数据。
+
+erase(iterator start, iterator end); 删除迭代器从start到end之间的元素，不包含end位置元素

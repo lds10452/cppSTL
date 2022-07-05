@@ -28,5 +28,9 @@ public:
 	 *  ¥Ê»°
 	 */
 	virtual void Access() = 0;
+	/*!
+	 *  ∆‰À˚
+	 */
+	virtual void OtherOp() = 0;
 };
 

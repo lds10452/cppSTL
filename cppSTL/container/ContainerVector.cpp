@@ -69,6 +69,14 @@ void ContainerVector::Access()
 	cout << "m_vecContainer.back(): " << m_vecContainer.back() << endl;
 }
 
+void ContainerVector::OtherOp()
+{
+	vector<int>(2,1).swap(m_vecContainer);
+	PrintResult(m_vecContainer, "vector<int>(2,1).swap(m_vecContainer)");
+	m_vecContainer.reserve(20);
+	cout << "m_vecContainer.reserve(20)后容量：" << m_vecContainer.capacity() << " ,大小：" << m_vecContainer.size() << endl;
+}
+
 void ContainerVector::PrintResult(vector<int>& v, string str)
 {
 	cout << str+": ";
