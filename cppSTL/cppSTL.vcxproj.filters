@@ -29,6 +29,9 @@
     <ClCompile Include="container\ContainerTest.cpp">
       <Filter>container</Filter>
     </ClCompile>
+    <ClCompile Include="container\ContainerDeque.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container\ContainerBase.h">
@@ -41,6 +44,9 @@
       <Filter>container</Filter>
     </ClInclude>
     <ClInclude Include="container\ContainerTest.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ContainerDeque.h">
       <Filter>container</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,7 @@
 #pragma once
 #include "ContainerBase.h"
-#include <vector>
-class ContainerVector:public ContainerBase
+#include <deque>
+class ContainerDeque:public ContainerBase
 {
 public:
 	void Construction();
@@ -11,8 +11,8 @@ public:
 	void Insert();
 	void Access();
 	void Deletion();
-	void PrintResult(vector<int> &v,string str = "");
+	void PrintResult(deque<int>& v, string str = "");
 private:
-	vector<int> m_vecContainer;
+	deque<int> m_dequeContainer;
 };
 

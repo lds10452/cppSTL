@@ -1,8 +1,10 @@
 #include "ContainerTest.h"
 #include "ContainerVector.h"
+#include "ContainerDeque.h"
 ContainerTest::ContainerTest()
 {
-	m_pBase = new ContainerVector;
+	//m_pBase = new ContainerVector;
+	m_pBase = new ContainerDeque;
 }
 
 void ContainerTest::Exec()

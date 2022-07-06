@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="container\ContainerBase.cpp" />
+    <ClCompile Include="container\ContainerDeque.cpp" />
     <ClCompile Include="container\ContainerString.cpp" />
     <ClCompile Include="container\ContainerTest.cpp" />
     <ClCompile Include="container\ContainerVector.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container\ContainerBase.h" />
+    <ClInclude Include="container\ContainerDeque.h" />
     <ClInclude Include="container\ContainerString.h" />
     <ClInclude Include="container\ContainerTest.h" />
     <ClInclude Include="container\ContainerVector.h" />

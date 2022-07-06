@@ -51,7 +51,7 @@ push_back(ele); //尾部插入元素ele
 
 ```c++
 pop_back();//删除最后一个元素
-erase(const_iterator start, const_iterator end);//删除迭代器从start到end之间的元素
+erase(const_iterator start, const_iterator end);//删除迭代器[start，end)之间的元素
 erase(const_iterator pos);//删除迭代器指向的元素
 clear();//删除容器中所有元素
 ```

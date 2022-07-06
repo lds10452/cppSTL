@@ -12,40 +12,6 @@ void ContainerVector::Construction()
 	PrintResult(v3, "vector<int> v3(v2)");
 }
 
-void ContainerVector::Insert()
-{
-	m_vecContainer.clear();
-	m_vecContainer.push_back(2);
-	PrintResult(m_vecContainer, "m_vecContainer.push_back(2)");
-	m_vecContainer.insert(m_vecContainer.end(), 3);
-	PrintResult(m_vecContainer, "m_vecContainer.insert(m_vecContainer.end(), 3)");
-	m_vecContainer.insert(m_vecContainer.begin(), 3, 1);
-	PrintResult(m_vecContainer, "m_vecContainer.insert(m_vecContainer.begin(), 3, 1)");
-}
-
-void ContainerVector::Deletion()
-{
-	m_vecContainer.erase(m_vecContainer.begin() + 3);
-	PrintResult(m_vecContainer, "m_vecContainer.erase(m_vecContainer.begin() + 3)");
-	m_vecContainer.erase(m_vecContainer.begin(), m_vecContainer.begin() + 2);
-	PrintResult(m_vecContainer, "m_vecContainer.erase(m_vecContainer.begin(), m_vecContainer.begin() + 2)");
-	m_vecContainer.pop_back();
-	PrintResult(m_vecContainer, "m_vecContainer.pop_back()");
-	m_vecContainer.clear();
-	PrintResult(m_vecContainer, "m_vecContainer.clear()");
-}
-
-void ContainerVector::Capacity()
-{
-	cout << "m_vecContainer.empty(): " << m_vecContainer.empty() << endl;
-	cout << "m_vecContainer.capacity(): " << m_vecContainer.capacity() << endl;
-	cout << "m_vecContainer.size(): " << m_vecContainer.size() << endl;
-	m_vecContainer.resize(6,10);
-	PrintResult(m_vecContainer, "m_vecContainer.resize(6,10)");
-	m_vecContainer.resize(4);
-	PrintResult(m_vecContainer, "m_vecContainer.resize(4)");
-}
-
 void ContainerVector::Assignment()
 {
 	//m_vecContainer.push_back(2);
@@ -61,6 +27,36 @@ void ContainerVector::Assignment()
 	PrintResult(v2, "v2 = v1");
 }
 
+void ContainerVector::Capacity()
+{
+	cout << "m_vecContainer.empty(): " << m_vecContainer.empty() << endl;
+	cout << "m_vecContainer.capacity(): " << m_vecContainer.capacity() << endl;
+	cout << "m_vecContainer.size(): " << m_vecContainer.size() << endl;
+	m_vecContainer.resize(6, 10);
+	PrintResult(m_vecContainer, "m_vecContainer.resize(6,10)");
+	m_vecContainer.resize(4);
+	PrintResult(m_vecContainer, "m_vecContainer.resize(4)");
+}
+
+void ContainerVector::OtherOp()
+{
+	vector<int>(2, 1).swap(m_vecContainer);
+	PrintResult(m_vecContainer, "vector<int>(2,1).swap(m_vecContainer)");
+	m_vecContainer.reserve(20);
+	cout << "m_vecContainer.reserve(20)后容量：" << m_vecContainer.capacity() << " ,大小：" << m_vecContainer.size() << endl;
+}
+
+void ContainerVector::Insert()
+{
+	m_vecContainer.clear();
+	m_vecContainer.push_back(2);
+	PrintResult(m_vecContainer, "m_vecContainer.push_back(2)");
+	m_vecContainer.insert(m_vecContainer.end(), 3);
+	PrintResult(m_vecContainer, "m_vecContainer.insert(m_vecContainer.end(), 3)");
+	m_vecContainer.insert(m_vecContainer.begin(), 3, 1);
+	PrintResult(m_vecContainer, "m_vecContainer.insert(m_vecContainer.begin(), 3, 1)");
+}
+
 void ContainerVector::Access()
 {
 	cout << "m_vecContainer.at(3): " << m_vecContainer.at(3) << endl;
@@ -69,12 +65,16 @@ void ContainerVector::Access()
 	cout << "m_vecContainer.back(): " << m_vecContainer.back() << endl;
 }
 
-void ContainerVector::OtherOp()
+void ContainerVector::Deletion()
 {
-	vector<int>(2,1).swap(m_vecContainer);
-	PrintResult(m_vecContainer, "vector<int>(2,1).swap(m_vecContainer)");
-	m_vecContainer.reserve(20);
-	cout << "m_vecContainer.reserve(20)后容量：" << m_vecContainer.capacity() << " ,大小：" << m_vecContainer.size() << endl;
+	m_vecContainer.erase(m_vecContainer.begin() + 3);
+	PrintResult(m_vecContainer, "m_vecContainer.erase(m_vecContainer.begin() + 3)");
+	m_vecContainer.erase(m_vecContainer.begin(), m_vecContainer.begin() + 2);
+	PrintResult(m_vecContainer, "m_vecContainer.erase(m_vecContainer.begin(), m_vecContainer.begin() + 2)");
+	m_vecContainer.pop_back();
+	PrintResult(m_vecContainer, "m_vecContainer.pop_back()");
+	m_vecContainer.clear();
+	PrintResult(m_vecContainer, "m_vecContainer.clear()");
 }
 
 void ContainerVector::PrintResult(vector<int>& v, string str)

@@ -9,28 +9,28 @@ public:
 	 */
 	virtual void Construction()=0;
 	/*!
-	 *  插入
+	 *  赋值
 	 */
-	virtual void Insert() = 0;
-	/*!
-	 *  删除
-	 */
-	virtual void Deletion() = 0;
+	virtual void Assignment() = 0;
 	/*!
 	 *  容量大小
 	 */
 	virtual void Capacity() = 0;
 	/*!
-	 *  赋值
+	 *  其他
 	 */
-	virtual void Assignment() = 0;
+	virtual void OtherOp() = 0;
+	/*!
+	 *  插入
+	 */
+	virtual void Insert() = 0;
 	/*!
 	 *  存取
 	 */
 	virtual void Access() = 0;
 	/*!
-	 *  其他
+	 *  删除
 	 */
-	virtual void OtherOp() = 0;
+	virtual void Deletion() = 0;
 };
 
