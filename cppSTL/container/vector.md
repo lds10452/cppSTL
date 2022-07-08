@@ -62,6 +62,6 @@ resize影响容量和大小。reserve影响容量。
 
 利用vector<int>(v).swap(v);收缩容量。
 
-构造：构造对象初始化；赋值：清空容器再赋值；插入：在原容器基础插入数据。
+构造：构造对象初始化；赋值：清空容器原元素再赋值；插入：在原容器基础插入数据。
 
 erase(iterator start, iterator end); 删除迭代器从start到end之间的元素，不包含end位置元素
