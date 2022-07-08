@@ -2,11 +2,15 @@
 #include "ContainerVector.h"
 #include "ContainerDeque.h"
 #include "ContainerList.h"
+#include "ContainerStack.h"
+#include "ContainerQueue.h"
 ContainerTest::ContainerTest()
 {
 	//m_pBase = new ContainerVector;
 	//m_pBase = new ContainerDeque;
-	m_pBase = new ContainerList;
+	//m_pBase = new ContainerList;
+	//m_pBase = new ContainerStack;
+	m_pBase = new ContainerQueue;
 }
 
 void ContainerTest::Exec()
