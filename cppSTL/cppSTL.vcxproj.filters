@@ -41,6 +41,9 @@
     <ClCompile Include="container\ContainerQueue.cpp">
       <Filter>container</Filter>
     </ClCompile>
+    <ClCompile Include="container\ContainerSet.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container\ContainerBase.h">
@@ -65,6 +68,9 @@
       <Filter>container</Filter>
     </ClInclude>
     <ClInclude Include="container\ContainerQueue.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="container\ContainerSet.h">
       <Filter>container</Filter>
     </ClInclude>
   </ItemGroup>

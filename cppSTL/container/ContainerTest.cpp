@@ -5,14 +5,16 @@
 #include "ContainerList.h"
 #include "ContainerStack.h"
 #include "ContainerQueue.h"
+#include "ContainerSet.h"
 ContainerTest::ContainerTest()
 {
-	m_pBase = new ContainerString;
+	//m_pBase = new ContainerString;
 	//m_pBase = new ContainerVector;
 	//m_pBase = new ContainerDeque;
 	//m_pBase = new ContainerList;
 	//m_pBase = new ContainerStack;
 	//m_pBase = new ContainerQueue;
+	m_pBase = new ContainerSet;
 }
 
 void ContainerTest::Exec()
