@@ -6,6 +6,7 @@
 #include "ContainerStack.h"
 #include "ContainerQueue.h"
 #include "ContainerSet.h"
+#include "ContainerMap.h"
 ContainerTest::ContainerTest()
 {
 	//m_pBase = new ContainerString;
@@ -14,7 +15,8 @@ ContainerTest::ContainerTest()
 	//m_pBase = new ContainerList;
 	//m_pBase = new ContainerStack;
 	//m_pBase = new ContainerQueue;
-	m_pBase = new ContainerSet;
+	//m_pBase = new ContainerSet;
+	m_pBase = new ContainerMap;
 }
 
 void ContainerTest::Exec()

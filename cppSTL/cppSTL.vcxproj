@@ -144,6 +144,7 @@
     <ClCompile Include="container\ContainerBase.cpp" />
     <ClCompile Include="container\ContainerDeque.cpp" />
     <ClCompile Include="container\ContainerList.cpp" />
+    <ClCompile Include="container\ContainerMap.cpp" />
     <ClCompile Include="container\ContainerQueue.cpp" />
     <ClCompile Include="container\ContainerSet.cpp" />
     <ClCompile Include="container\ContainerStack.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="container\ContainerBase.h" />
     <ClInclude Include="container\ContainerDeque.h" />
     <ClInclude Include="container\ContainerList.h" />
+    <ClInclude Include="container\ContainerMap.h" />
     <ClInclude Include="container\ContainerQueue.h" />
     <ClInclude Include="container\ContainerSet.h" />
     <ClInclude Include="container\ContainerStack.h" />
