@@ -12,6 +12,12 @@
     <Filter Include="container">
       <UniqueIdentifier>{1df06772-dc57-4040-abd6-d51bfad5cb93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="template">
+      <UniqueIdentifier>{9389e71d-f3fb-467b-a038-90edbe3bf277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operatorOp">
+      <UniqueIdentifier>{00bfab61-791a-4ac1-b6b9-a45f1aa3b5dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -47,6 +53,36 @@
     <ClCompile Include="container\ContainerMap.cpp">
       <Filter>container</Filter>
     </ClCompile>
+    <ClCompile Include="cppTemplate\templateBase.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="cppTemplate\templateClass.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="cppTemplate\TemplateFunction.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\arithmetic.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\testOperator.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\leftShift.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\increase.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\equalOp.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\relationalOp.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
+    <ClCompile Include="operatorOp\funCallOp.cpp">
+      <Filter>operatorOp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container\ContainerBase.h">
@@ -78,6 +114,18 @@
     </ClInclude>
     <ClInclude Include="container\ContainerMap.h">
       <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="cppTemplate\templateBase.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="cppTemplate\templateClass.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="cppTemplate\TemplateFunction.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="operatorOp\testOperator.h">
+      <Filter>operatorOp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

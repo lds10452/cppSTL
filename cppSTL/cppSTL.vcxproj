@@ -151,6 +151,16 @@
     <ClCompile Include="container\ContainerString.cpp" />
     <ClCompile Include="container\ContainerTest.cpp" />
     <ClCompile Include="container\ContainerVector.cpp" />
+    <ClCompile Include="cppTemplate\templateBase.cpp" />
+    <ClCompile Include="cppTemplate\templateClass.cpp" />
+    <ClCompile Include="cppTemplate\TemplateFunction.cpp" />
+    <ClCompile Include="operatorOp\arithmetic.cpp" />
+    <ClCompile Include="operatorOp\equalOp.cpp" />
+    <ClCompile Include="operatorOp\funCallOp.cpp" />
+    <ClCompile Include="operatorOp\increase.cpp" />
+    <ClCompile Include="operatorOp\leftShift.cpp" />
+    <ClCompile Include="operatorOp\relationalOp.cpp" />
+    <ClCompile Include="operatorOp\testOperator.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +174,10 @@
     <ClInclude Include="container\ContainerString.h" />
     <ClInclude Include="container\ContainerTest.h" />
     <ClInclude Include="container\ContainerVector.h" />
+    <ClInclude Include="cppTemplate\templateBase.h" />
+    <ClInclude Include="cppTemplate\templateClass.h" />
+    <ClInclude Include="cppTemplate\TemplateFunction.h" />
+    <ClInclude Include="operatorOp\testOperator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
