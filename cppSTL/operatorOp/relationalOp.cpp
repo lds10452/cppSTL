@@ -4,16 +4,17 @@ using namespace std;
 class Animal
 {
 	int m_nAge;
+	friend bool operator==(const Animal& p1, const Animal& p2);
 public:
 	Animal(int age):m_nAge(age){}
-	bool operator==(const Animal& p)
+	/*bool operator==(const Animal& p)
 	{
 		if (m_nAge == p.m_nAge)
 		{
 			return true;
 		}
 		return false;
-	}
+	}*/
 	bool operator<(const Animal& p)
 	{
 		if (m_nAge < p.m_nAge)
@@ -31,7 +32,14 @@ public:
 		return false;
 	}
 };
-
+bool operator==(const Animal& p1, const Animal& p2)
+{
+	if (p1.m_nAge == p2.m_nAge)
+	{
+		return true;
+	}
+	return false;
+}
 void testRelationalOp()
 {
 	Animal a1(10);
