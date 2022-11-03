@@ -118,12 +118,6 @@
     <ClInclude Include="cppTemplate\templateBase.h">
       <Filter>template</Filter>
     </ClInclude>
-    <ClInclude Include="cppTemplate\templateClass.h">
-      <Filter>template</Filter>
-    </ClInclude>
-    <ClInclude Include="cppTemplate\TemplateFunction.h">
-      <Filter>template</Filter>
-    </ClInclude>
     <ClInclude Include="operatorOp\testOperator.h">
       <Filter>operatorOp</Filter>
     </ClInclude>

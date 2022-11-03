@@ -175,8 +175,6 @@
     <ClInclude Include="container\ContainerTest.h" />
     <ClInclude Include="container\ContainerVector.h" />
     <ClInclude Include="cppTemplate\templateBase.h" />
-    <ClInclude Include="cppTemplate\templateClass.h" />
-    <ClInclude Include="cppTemplate\TemplateFunction.h" />
     <ClInclude Include="operatorOp\testOperator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
