@@ -2,6 +2,7 @@
 
 void testTemplateBase()
 {
-	testSTLFun();
+	//testSTLFun();
+	testTemplateClass();
 }
 
