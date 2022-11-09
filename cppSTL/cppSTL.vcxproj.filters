@@ -83,6 +83,12 @@
     <ClCompile Include="operatorOp\funCallOp.cpp">
       <Filter>operatorOp</Filter>
     </ClCompile>
+    <ClCompile Include="cppTemplate\myArray.hpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="cppTemplate\testMyArray.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="container\ContainerBase.h">

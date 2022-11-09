@@ -151,9 +151,11 @@
     <ClCompile Include="container\ContainerString.cpp" />
     <ClCompile Include="container\ContainerTest.cpp" />
     <ClCompile Include="container\ContainerVector.cpp" />
+    <ClCompile Include="cppTemplate\myArray.hpp" />
     <ClCompile Include="cppTemplate\templateBase.cpp" />
     <ClCompile Include="cppTemplate\templateClass.cpp" />
     <ClCompile Include="cppTemplate\TemplateFunction.cpp" />
+    <ClCompile Include="cppTemplate\testMyArray.cpp" />
     <ClCompile Include="operatorOp\arithmetic.cpp" />
     <ClCompile Include="operatorOp\equalOp.cpp" />
     <ClCompile Include="operatorOp\funCallOp.cpp" />

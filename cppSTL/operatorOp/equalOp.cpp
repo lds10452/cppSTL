@@ -17,7 +17,7 @@ public:
 			m_nPrice = NULL;
 		}
 	}
-	Car& operator=(const Car& p)
+	const Car& operator=(const Car& p)
 	{
 		if (m_nPrice)
 		{

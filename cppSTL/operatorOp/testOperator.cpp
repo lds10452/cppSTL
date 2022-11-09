@@ -4,8 +4,8 @@ void testOperator()
 {
 	//testArithmetic();
 	//testLeftShift();
-	testIncrease();
-	//testEqualOp();
+	//testIncrease();
+	testEqualOp();
 	//testRelationalOp();
 	//testFunCallOp();
 }
